@@ -8,13 +8,13 @@ const Stack = createStackNavigator();
 const StackNavigator = () => {
     return (
         <Stack.Navigator
-            initialRouteName="Tela Inicial"
+            initialRouteName="Home"
             screenOptions={{
                 headerShown: false
             }}
         >
-            <Stack.Screen name="Tela Inicial" component={TabNavigator} />
-            <Stack.Screen name="Tela de Posts" component={PostScreen} />
+            <Stack.Screen name="Home" component={TabNavigator} />
+            <Stack.Screen name="PostScreen" component={PostScreen} />
         </Stack.Navigator>
     );
 };
